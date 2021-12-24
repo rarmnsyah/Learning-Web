@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>CSS tutor</title>
+</head>
+
+<!-- we can set bg color using this format -->
+
+<body style="background-color: pink;">
+
+    <!-- this format we use for import font from outer, like google -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+    <!-- then we can use style to modify our text freely -->
+    <style>
+        /* class that meaning we can make sure the same style one and other text we can including
+        and with this case we use class for h1(This is the CSS Tutorial) */
+        .class {
+            font-size: 50px;
+            font-family: Lobster;
+            color: blueviolet;
+        }
+
+        /* border to txt / img */
+        /* these are so many border style we can use, so in that case you can searching that from internet okay */
+        /* margin berguna untuk memberi jarak */
+        /* padding berguna untuk memanipulasi besarny */
+        .border {
+            border-color: violet;
+            border-width: 20px;
+            border-style: solid;
+            border-radius: 10px;
+            /* for margin and paddding, we can use notation margin:top right bottom left; */
+            margin-right: 30%;
+            margin-left: 30%;
+        }
+
+        /* there are so many style we can use, so u can search in google okay */
+        .font {
+            /* this font family mean if the first font(courier) isnt available in some web browser, so they will use the next font after comma */
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .blueviolet-background {
+            background-color: blueviolet;
+        }
+
+        /* this is what we call id, id is function that similar with class
+        but, id is higher than class, so when the class and id conflict, 
+        the txt will follow id style, we can use id for javascript too */
+        #cat-photo-element {
+            background-color: violet;
+        }
+
+        .box {
+            border-width: 5px;
+            border-style: solid;
+            border-color: black;
+            text-align: center;
+        }
+
+        /* we can use [type='value'] for making class to all function name of 'value' */
+        [type='radio'] {
+            margin: 0px 0px 10px 0px;
+        }
+    </style>
+
+    <!-- center will make text at center -->
+    <center>
+        <!-- we can insert more than one class -->
+        <h1 class="class border" style="border-width: 5px; border-color: blueviolet;">This is the CSS Tutorial</h1><br>
+
+    </center>
+
+    <div>
+        <center>
+            <h2 class="font">Kim Jisoo</h2>
+        </center>
+        <!-- 'style' function for making more style for the img -->
+        <a href="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2020/08/18/3439435064.jpg">
+            <img src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2020/08/18/3439435064.jpg"
+                alt="Kim-Jisoo Personel Bblacpink yang berperan protagonis dalam KDrama 'Snowdrop'"
+                style="width: 500px; height: 500px; display: block; margin: auto;" class="border">
+        </a>
+        <center>
+            <p style="font-family: monospace; font-size: 20px;">
+                <a
+                    href="https://www.google.com/search?q=kim+jisoo&sxsrf=AOaemvJ3LCTtYsMZxbnkkiCd5YzKxgpxeQ:1633103600765&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi_v4SAyanzAhXtgtgFHVHxCcUQ_AUoAXoECAEQAw&biw=1280&bih=648&dpr=1.5">
+                    More Photo Jisoo
+                </a>
+            </p>
+        </center>
+    </div>
+    <br><br>
+    <center>
+        <h2 style="font-family: Lobster; color: blueviolet;">Some Description to Kim-Jisoo Queen of Black Pink </h2>
+    </center>
+    <div class="border" style="border-color: pink; margin-left: 40%; border-width: 1px;">
+        <ul>
+            <h3 class="font" style="color: blueviolet;">Jisoo Achievment</h3>
+            <li class="font">Visual of Blackpink</li>
+            <li class="font">Dior Global Ambassador</li>
+            <li class="font">Have Some Huge Fans</li>
+        </ul>
+    </div>
+
+    <div class="font box" style="margin-left: 20%; margin-right: 20%;">
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+            <div class="box" style="margin-left: 30%; margin-right: 30%; margin-top: 2%; margin-bottom: 2%;">
+                <p>Login Your Account!</p>
+                <label for="username">
+                    <input type="text" placeholder="Username" required><br>
+                    <input type="text" placeholder="Password" required>
+                </label><br><br>
+                <button type="submit">Enter</button>
+                <br><br>
+            </div>
+            <p>Choose Your Team</p>
+            <label for="Jisoo">
+                <input type="radio" name="Team" id="jisoo">Jisoo
+            </label>
+            <label for="Jennie">
+                <input type="radio" name="Team" id="Jennie">Jennie
+            </label><br>
+            <label for="Rosie">
+                <input type="radio" name="Team" id="Rosie">Rosie
+            </label>
+            <label for="Lisa">
+                <input type="radio" name="Team" id="Lisa">Lisa
+            </label>
+        </form>
+        <br>
+    </div>
+</body>
+
+</html>

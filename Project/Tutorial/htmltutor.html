@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML tutor</title>
+</head>
+
+<body>
+    <!-- h in html is for font and level of headings -->
+    <!-- we use class for h1, and p, so the text will follow the style (blue color) -->
+    <h1>CatPhotoApp</h2>
+
+        <main>
+            <!-- p in html that meaning paragraph -->
+            <p>
+                Clik Cat Photos
+                <!-- a meaning an anchor link, to another web -->
+                <!-- href berfungsi untuk meletakkan titik anchor -->
+                <!-- with # for internal section, and without # for external section -->
+                <!-- this is an example for external section (go to another web) -->
+                <a href="https://www.freecatphotoapp.com">
+                    <p><img src="https://www.bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></p>
+                </a>
+                For More View
+            </p>
+
+            <!-- and this for internal section, we can go to another paragraph we want -->
+            <a href="#footer">Link to internal section</a>
+
+            <!-- div (division) berfungsi sebagai pembagi sub materi (konten) agar terlihat lebih rapi -->
+            <!-- otherwise, with div we can using class, so we can use class wisely -->
+            <h2>Description</h2>
+            <div>
+                <!-- p berfungsi untuk menandakan sebuah paraghraf -->
+                <p>
+                    Halo semuanya, berikut penampilan kucing tercinta saya, kucing ini saya namai meow.
+                </p>
+                <p>
+                    Dia sangat imut, namun terkadang dia bersifat seperti reog dan tidak bisa dikendalikan, seperti
+                    kerasukan
+                    oleh genderuwo
+                </p>
+                <p>
+                    Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the
+                    red
+                    <br>hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched
+                    sunbathe,
+                    <br>shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.
+                    <br>ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the
+                    red
+                    dot,
+                    <br>hairball run catnip eat the grass sniff.
+                </p>
+                <p>
+                    Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the
+                    sink
+                    <br>fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere
+                    stretching
+                    attack
+                    <br>your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass
+                    rip
+                    the
+                    <br>couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip
+                    scratched.
+                </p>
+            </div>
+
+            <!-- this footer we make for sign when we make some internal section -->
+            <footer id="footer"></footer>
+
+            <div>
+                <!-- this is how we make list / tabel in html -->
+                <!-- for example we can use ul (*) -->
+                <p>Top things cat loves: </p>
+                <ul>
+                    <!-- li that meaning, the new line -->
+                    <li>Meow sangat menyukai ikan</li>
+                    <li>Dia juga sangat suka menggigit saya</li>
+                    <li>Selain itu, dia suka banget saya</li>
+                </ul>
+
+                <!-- another example we use ol (1,2) -->
+                <p>Top things most cat hate:</p>
+                <ol>
+                    <li>My brother</li>
+                    <li>Cucumber</li>
+                    <li>My Sister</li>
+                </ol>
+            </div>
+
+            <div>
+                <!-- form di html berfungsi sebagai wadah untuk menerima inputan user -->
+                <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+                    <!-- input adalah fungsi untuk mengambil inputan dari luar -->
+                    <!-- tipe input radio, adalah tipe input yang biasanya mengharuskan user untuk hanya memberi 1 input dari berbagai option -->
+                    <!-- checked berguna untuk memberi default check pada inputan -->
+                    <label for="indoor">
+                        <input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked>Indoor
+                    </label>
+                    <label for="outdoor">
+                        <input id="Outdoor" type="radio" name="indoor-outdoor" value="outdoor">Outdoor
+                    </label><br>
+
+                    <input type="text" placeholder="cat photo URL" required>
+                    <!-- button berfungsi untuk menampilkan tombol di web -->
+                    <button type="submit">Enter</button><br>
+
+                    <!-- karena diatas kita sudah menggunakna tipe input radio, sekarang kita menggunakan tipe input checkbox -->
+                    <!-- tipe input checkbox adalah tipe input yang menggunakna ceklist untuk memasukkan sebuah input, dan biasanya lebih dari 1 -->
+                    <!-- berikut contoh penggunaannya -->
+                    <label for="loveli"><input id="loveli" type="checkbox" name="personality" value="mantap" checked>
+                        Mantap</label>
+                    <label for=jiwa"><input id=jiwa" type="checkbox" name="personality" value="jiwa"> Jiwa</label>
+                    <label for="sekali"><input id="sekali" type="checkbox" name="personality" value="sekali">
+                        Sekali</label>
+
+                </form>
+            </div>
+
+        </main>
+
+</body>
+
+</html>
