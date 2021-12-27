@@ -1,4 +1,3 @@
-# Rarmnsyah Resolution
-This is my resolution bruuhhhhhh in 2022
-I hope i can finish all my resolution as soon as possible
-keep fighting ra, from ur past
+# Rarmnsyah Web-Learning REPO
+This is my repo for learning web, hope you enjoy this repo
+if you have some suggestion, just chat me.
